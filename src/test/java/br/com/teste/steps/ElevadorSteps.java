@@ -2,14 +2,10 @@ package br.com.teste.steps;
 
 import com.dimensaozero.blog.basico.Elevador;
 import com.dimensaozero.blog.basico.Pessoa;
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
-import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import org.junit.Assert;
-
-import java.util.ArrayList;
 
 public class ElevadorSteps {
 
@@ -31,7 +27,6 @@ public class ElevadorSteps {
         elevador.setAndarAtual(andar);
         System.out.println("O elevador está no andar: " + elevador.getAndarAtual());
         elevador.adicionaPessoa(pessoa);
-        System.out.println("Passageiros no elevador: " + elevador.getListaDePessoa());
         System.out.println("Total de passageiros: " + elevador.getNumeroDePessoas());
     }
 
@@ -46,6 +41,7 @@ public class ElevadorSteps {
         System.out.println("Idade atual: " + pessoa.getIdade());
         pessoa.setIdade(40);
         System.out.println("Idade alterada: " + pessoa.getIdade());
+        Assert.assertEquals(40, pessoa.getIdade());
     }
 
     @E("^o elevador volta para o térreo$")
@@ -53,20 +49,17 @@ public class ElevadorSteps {
         System.out.println("Andar atual: " + elevador.getAndarAtual());
         elevador.setAndarAtual(0);
         System.out.println("Andar térreo: " + elevador.getAndarAtual());
+        Assert.assertEquals(0, elevador.getAndarAtual());
+
 
     }
 
     @Quando("^o elevador chegar ao quinto andar$")
     public void oElevadorChegarAoQuintoAndar() throws Throwable {
-        elevador.setAndarAtual(5);;
+        elevador.setAndarAtual(5);
+        ;
         System.out.println("Andar atual: " + elevador.getAndarAtual());
+        Assert.assertEquals(5, elevador.getAndarAtual());
 
-    }
-
-    @Então("^os passageiros devem estar no elevador$")
-    public void osPassageirosDevemEstarNoElevador() throws Throwable {
-        ArrayList<Pessoa> listaPessoa = new ArrayList<Pessoa>();
-        System.out.println("Andar atual: " + elevador.getAndarAtual());
-        System.out.println("Passageiros no elevador: " + elevador.getListaDePessoa());
     }
 }

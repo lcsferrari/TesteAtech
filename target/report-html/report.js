@@ -28,7 +28,7 @@ formatter.match({
   "location": "ElevadorSteps.queOElevadorEstáNoTérreo()"
 });
 formatter.result({
-  "duration": 117630600,
+  "duration": 164895700,
   "status": "passed"
 });
 formatter.scenario({
@@ -56,11 +56,6 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "os passageiros devem estar no elevador",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 13,
   "name": "o elevador volta para o térreo",
   "keyword": "E "
 });
@@ -78,7 +73,7 @@ formatter.match({
   "location": "ElevadorSteps.passageiroChamaElevador(String,int)"
 });
 formatter.result({
-  "duration": 2690919300,
+  "duration": 1713769100,
   "status": "passed"
 });
 formatter.match({
@@ -95,28 +90,21 @@ formatter.match({
   "location": "ElevadorSteps.passageiroChamaElevador(String,int)"
 });
 formatter.result({
-  "duration": 1351713500,
+  "duration": 578178100,
   "status": "passed"
 });
 formatter.match({
   "location": "ElevadorSteps.oElevadorChegarAoQuintoAndar()"
 });
 formatter.result({
-  "duration": 129700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ElevadorSteps.osPassageirosDevemEstarNoElevador()"
-});
-formatter.result({
-  "duration": 123000,
+  "duration": 2717000,
   "status": "passed"
 });
 formatter.match({
   "location": "ElevadorSteps.oElevadorVoltaParaOTérreo()"
 });
 formatter.result({
-  "duration": 82700,
+  "duration": 89400,
   "status": "passed"
 });
 formatter.background({
@@ -135,11 +123,11 @@ formatter.match({
   "location": "ElevadorSteps.queOElevadorEstáNoTérreo()"
 });
 formatter.result({
-  "duration": 141400,
+  "duration": 70600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
+  "line": 15,
   "name": "Alterar idade do passageiro",
   "description": "",
   "id": "transportar-passageiros-entre-os-andares-utilizando-o-elevador;alterar-idade-do-passageiro",
@@ -147,22 +135,22 @@ formatter.scenario({
   "keyword": "Cenário"
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "que o passageiro \"Claudia\" que está no 1º andar chamou o elevador",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 18,
+  "line": 17,
   "name": "o elevador subir para o 1º andar",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "deve ser possível editar a idade dela",
-  "keyword": "E "
+  "keyword": "Entao "
 });
 formatter.step({
-  "line": 20,
+  "line": 19,
   "name": "o elevador volta para o térreo",
   "keyword": "E "
 });
@@ -180,7 +168,7 @@ formatter.match({
   "location": "ElevadorSteps.passageiroChamaElevador(String,int)"
 });
 formatter.result({
-  "duration": 1697662300,
+  "duration": 2148897200,
   "status": "passed"
 });
 formatter.match({
@@ -193,21 +181,21 @@ formatter.match({
   "location": "ElevadorSteps.elevadorSubirParaOAndar(int)"
 });
 formatter.result({
-  "duration": 219600,
+  "duration": 175500,
   "status": "passed"
 });
 formatter.match({
   "location": "ElevadorSteps.deveSerPossívelEditarAIdadeDela()"
 });
 formatter.result({
-  "duration": 251200,
+  "duration": 102200,
   "status": "passed"
 });
 formatter.match({
   "location": "ElevadorSteps.oElevadorVoltaParaOTérreo()"
 });
 formatter.result({
-  "duration": 119000,
+  "duration": 178600,
   "status": "passed"
 });
 formatter.background({
@@ -226,11 +214,11 @@ formatter.match({
   "location": "ElevadorSteps.queOElevadorEstáNoTérreo()"
 });
 formatter.result({
-  "duration": 138200,
+  "duration": 126600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
+  "line": 22,
   "name": "Idade de passageiros incorreta",
   "description": "",
   "id": "transportar-passageiros-entre-os-andares-utilizando-o-elevador;idade-de-passageiros-incorreta",
@@ -238,19 +226,19 @@ formatter.scenario({
   "keyword": "Cenário"
 });
 formatter.step({
-  "line": 24,
+  "line": 23,
   "name": "que o passageiro \"Evandro\" que está no 2º andar chamou o elevador",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 25,
+  "line": 24,
   "name": "o elevador subir para o 2º andar",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 26,
+  "line": 25,
   "name": "o elevador volta para o térreo",
-  "keyword": "E "
+  "keyword": "Entao "
 });
 formatter.match({
   "arguments": [
@@ -266,7 +254,7 @@ formatter.match({
   "location": "ElevadorSteps.passageiroChamaElevador(String,int)"
 });
 formatter.result({
-  "duration": 1490773700,
+  "duration": 1772812800,
   "status": "passed"
 });
 formatter.match({
@@ -279,14 +267,14 @@ formatter.match({
   "location": "ElevadorSteps.elevadorSubirParaOAndar(int)"
 });
 formatter.result({
-  "duration": 144700,
+  "duration": 131700,
   "status": "passed"
 });
 formatter.match({
   "location": "ElevadorSteps.oElevadorVoltaParaOTérreo()"
 });
 formatter.result({
-  "duration": 69700,
+  "duration": 105500,
   "status": "passed"
 });
 });
